@@ -44,16 +44,15 @@ int main() {
 
     cout << "Enter delimiter string:" << endl;
     getline(cin, delimiter);
-
-    vector<string> substrings = split(target, delimiter);
-    if (substrings.empty() && target.empty()) {
-	    cout << "No substrings." << endl;
-    } else {
-	    cout<< "The substrings are: ";
-	    for (size_t i = 0; i < substrings.size(); i++) {
-		    cout << "\"" << substrings[i] << "\"";
-		    if ( i < substrings.size() - 1) {
-			    cout << ", ";
+vector<string> substrings = split(target, delimiter);
+if (substrings.empty() && target.empty()) {
+	cout << "No substrings." << endl;
+} else {
+	cout<< "The substrings are: ";
+	for (size_t i = 0; i < substrings.size(); i++) {
+		cout << "\"" << substrings[i] << "\"";
+		if ( i < substrings.size() - 1) {
+			cout << ", ";
 	    }
     }
     cout << endl;
