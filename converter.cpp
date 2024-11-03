@@ -68,6 +68,10 @@ int main ( int argc, char *argv[] ) {
 		string hexValue = dec2bh(value, 'h');
 		cout << "The value in hexadecimal is: " << hexValue << endl;
 	} else if (option == "b2d") {
+		if (value.empty()) {
+			return -1;
+			exit(1);
+		}
 		int decimalValue = bin2d(value);
 		if (decimalValue == -1) {
 			cout << "Binary value contains non-binary digits." <<endl;
