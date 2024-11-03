@@ -69,7 +69,6 @@ int main ( int argc, char *argv[] ) {
 		cout << "The value in hexadecimal is: " << hexValue << endl;
 	} else if (option == "b2d") {
 		if (value.empty()) {
-			return -1;
 			exit(1);
 		}
 		int decimalValue = bin2d(value);
