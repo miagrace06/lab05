@@ -73,7 +73,6 @@ int main ( int argc, char *argv[] ) {
 		}
 		int decimalValue = bin2d(value);
 		if (decimalValue == -1) {
-			cout << "Binary value contains non-binary digits." <<endl;
 			exit(1);
 		}
 		cout << "The value in decimal is: " << decimalValue << endl;
